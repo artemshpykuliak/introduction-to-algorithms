@@ -9,5 +9,8 @@
         <module name="introduction-to-algoth" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="introduction-to-algoth" target="10" />
+    </bytecodeTargetLevel>
   </component>
 </project>
