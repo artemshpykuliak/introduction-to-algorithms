@@ -2,11 +2,15 @@ package chapter2.task1;
 
 public class InsertionDescendSort {
     public static void main(String[] args) {
-        var array = new int[]{31, 41, 59, 26, 41, 58};
-        int[] ints = insertionSort(array);
+        var arrayA = new int[]{31, 41, 59, 26, 41, 58};
+        var arrayB = new int[]{32, 42, 57, 25, 58, 60};
+        int[] ints = insertionSort(arrayA);
         for (int anInt : ints) {
-            System.out.println(anInt);
+            System.out.print(anInt + ", ");
         }
+        System.out.println();
+        System.out.println("-----");
+        System.out.println(match(arrayA, arrayB));
     }
 
     private static int[] insertionSort(int[] array) {
@@ -20,5 +24,16 @@ public class InsertionDescendSort {
             }
         }
         return array;
+    }
+
+    private static int match(int[] arrayA, int[] arrayB) {
+        int firstElement = 0;
+        for (int value : arrayA) {
+            firstElement = value;
+            for (int secondElement : arrayB) {
+                if (firstElement == secondElement) return firstElement;
+            }
+        }
+        return firstElement;
     }
 }
