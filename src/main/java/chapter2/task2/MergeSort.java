@@ -8,9 +8,7 @@ public class MergeSort {
     }
 
     private static int[] sort(int[] array, int lowIndex, int highIndex) {
-        if (lowIndex == highIndex) {
-            return new int[0];
-        } else if (lowIndex < highIndex) {
+        if (lowIndex < highIndex) {
 
             //Find middlePoint
             int middleIndex = (lowIndex + highIndex) / 2;
