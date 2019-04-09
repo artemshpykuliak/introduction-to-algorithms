@@ -2,7 +2,7 @@ package chapter2.task2;
 
 public class MergeSort {
     public static void main(String[] args) {
-        int[] array = new int[]{45, 145, 74, 1, 9, 12};
+        int[] array = new int[]{45, 36, 74, 1, 9, 12};
         int[] sortedArray = sort(array, 0, array.length - 1);
         print(sortedArray);
     }
