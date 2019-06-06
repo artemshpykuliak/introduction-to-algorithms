@@ -34,7 +34,7 @@ public class Main {
         return matrix;
     }
 
-    private static void print(int[][] matrix) {
+    public static void print(int[][] matrix) {
         for (int[] ints : matrix) {
             for (int i : ints) {
                 System.out.print(i + ", ");
